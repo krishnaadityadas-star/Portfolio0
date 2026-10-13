@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-weather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07131b" />
+      <stop offset="100%" stop-color="#02080d" />
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg-grad-weather)" />
+
+  <!-- Outer Dashboard Window -->
+  <rect x="50" y="40" width="700" height="370" rx="12" fill="#0b1c28" stroke="#00f2fe" stroke-width="1.5" stroke-opacity="0.5" />
+  
+  <!-- Header Bar -->
+  <rect x="50" y="40" width="700" height="42" rx="12" fill="#10283a" />
+  <circle cx="75" cy="61" r="5" fill="#ff5f56" />
+  <circle cx="95" cy="61" r="5" fill="#ffbd2e" />
+  <circle cx="115" cy="61" r="5" fill="#27c93f" />
+  <text x="400" y="66" text-anchor="middle" fill="#00f2fe" font-family="monospace" font-size="13" letter-spacing="2">OMNIWEATHER // ATMOSPHERIC TELEMETRY</text>
+
+  <!-- CSS Grid Layout Demonstration -->
+  <!-- Main Weather Card (Large) -->
+  <rect x="80" y="105" width="300" height="180" rx="10" fill="#081722" stroke="#1d4563" stroke-width="1.2" />
+  <text x="105" y="138" fill="#94a3b8" font-family="monospace" font-size="12">STATION: BENGALURU [BLR]</text>
+  <text x="105" y="190" fill="#00f2fe" font-family="sans-serif" font-size="44" font-weight="bold">24°C</text>
+  <text x="210" y="180" fill="#e2e8f0" font-family="sans-serif" font-size="14">CLEAR SKY</text>
+  <text x="105" y="225" fill="#64748b" font-family="monospace" font-size="11">HUMIDITY: 58% · BAROMETER: 1014 hPa</text>
+  <text x="105" y="255" fill="#00ff87" font-family="monospace" font-size="11">● GRID CELL: 1 / SPAN 2</text>
+
+  <!-- Sub Card 1: Wind Vector -->
+  <rect x="400" y="105" width="160" height="85" rx="8" fill="#081722" stroke="#1d4563" stroke-width="1" />
+  <text x="415" y="128" fill="#94a3b8" font-family="monospace" font-size="10">WIND VECTOR</text>
+  <text x="415" y="158" fill="#4facfe" font-family="sans-serif" font-size="20" font-weight="bold">14 km/h</text>
+  <text x="415" y="175" fill="#64748b" font-family="monospace" font-size="9">ENE 62°</text>
+
+  <!-- Sub Card 2: UV Index -->
+  <rect x="580" y="105" width="140" height="85" rx="8" fill="#081722" stroke="#1d4563" stroke-width="1" />
+  <text x="595" y="128" fill="#94a3b8" font-family="monospace" font-size="10">UV INDEX</text>
+  <text x="595" y="158" fill="#ffbd2e" font-family="sans-serif" font-size="20" font-weight="bold">3.2 MOD</text>
+  <text x="595" y="175" fill="#64748b" font-family="monospace" font-size="9">SAFE ZONE</text>
+
+  <!-- Sub Card 3: Air Quality HUD -->
+  <rect x="400" y="200" width="320" height="85" rx="8" fill="#081722" stroke="#1d4563" stroke-width="1" />
+  <text x="415" y="223" fill="#94a3b8" font-family="monospace" font-size="10">ATMOSPHERIC AIR QUALITY (AQI)</text>
+  <text x="415" y="253" fill="#00ff87" font-family="sans-serif" font-size="22" font-weight="bold">42 AQI · OPTIMAL</text>
+  <text x="415" y="272" fill="#64748b" font-family="monospace" font-size="9">PM2.5: 8.4 µg/m³ · PM10: 16.1 µg/m³</text>
+
+  <!-- 5-Day Forecast Row (CSS Grid repeat(5, 1fr)) -->
+  <rect x="80" y="305" width="640" height="85" rx="8" fill="#091b27" stroke="#1d4563" stroke-width="1" />
+  <text x="95" y="325" fill="#00f2fe" font-family="monospace" font-size="10">PREDICTIVE 5-DAY PROJECTION (CSS GRID REPEAT)</text>
+  
+  <text x="130" y="352" fill="#94a3b8" font-family="sans-serif" font-size="11">MON</text>
+  <text x="130" y="375" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">26°</text>
+
+  <text x="250" y="352" fill="#94a3b8" font-family="sans-serif" font-size="11">TUE</text>
+  <text x="250" y="375" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">28°</text>
+
+  <text x="370" y="352" fill="#94a3b8" font-family="sans-serif" font-size="11">WED</text>
+  <text x="370" y="375" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">25°</text>
+
+  <text x="490" y="352" fill="#94a3b8" font-family="sans-serif" font-size="11">THU</text>
+  <text x="490" y="375" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">24°</text>
+
+  <text x="610" y="352" fill="#94a3b8" font-family="sans-serif" font-size="11">FRI</text>
+  <text x="610" y="375" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">27°</text>
+</svg>
