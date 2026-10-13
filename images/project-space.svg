@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="space-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e1035" />
+      <stop offset="100%" stop-color="#07040d" />
+    </radialGradient>
+    <linearGradient id="violet-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b537f2" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+    <radialGradient id="planet-grad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#8a2be2" />
+      <stop offset="70%" stop-color="#4a154b" />
+      <stop offset="100%" stop-color="#1a0033" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#space-glow)" />
+
+  <!-- Stars -->
+  <circle cx="80" cy="90" r="1.5" fill="#ffffff" opacity="0.8" />
+  <circle cx="150" cy="50" r="1" fill="#ffffff" opacity="0.6" />
+  <circle cx="280" cy="110" r="2" fill="#b537f2" opacity="0.7" />
+  <circle cx="390" cy="40" r="1.5" fill="#ffffff" opacity="0.9" />
+  <circle cx="520" cy="80" r="2" fill="#00f2fe" opacity="0.8" />
+  <circle cx="680" cy="130" r="1" fill="#ffffff" opacity="0.5" />
+  <circle cx="720" cy="60" r="2.5" fill="#ffffff" opacity="0.8" />
+  <circle cx="110" cy="380" r="1.5" fill="#ffffff" opacity="0.7" />
+  <circle cx="640" cy="390" r="2" fill="#b537f2" opacity="0.8" />
+
+  <!-- Frame -->
+  <rect x="50" y="40" width="700" height="370" rx="12" fill="#110822" stroke="#b537f2" stroke-width="1.5" stroke-opacity="0.5" />
+  
+  <!-- Header -->
+  <rect x="50" y="40" width="700" height="42" rx="12" fill="#1a0f33" />
+  <circle cx="75" cy="61" r="5" fill="#ff5f56" />
+  <circle cx="95" cy="61" r="5" fill="#ffbd2e" />
+  <circle cx="115" cy="61" r="5" fill="#27c93f" />
+  <text x="400" y="66" text-anchor="middle" fill="#b537f2" font-family="monospace" font-size="13" letter-spacing="2">ASTRO-EXPLORER // CSS ANIMATION &amp; TRANSFORMS</text>
+
+  <!-- Orbiting Visual -->
+  <ellipse cx="530" cy="235" rx="150" ry="60" fill="none" stroke="#b537f2" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6" transform="rotate(-20 530 235)" />
+  <circle cx="530" cy="235" r="55" fill="url(#planet-grad)" stroke="#00f2fe" stroke-width="1.5" />
+  <circle cx="630" cy="190" r="14" fill="#00f2fe" opacity="0.9" />
+  
+  <!-- Content overlay (Left side) -->
+  <text x="95" y="145" fill="#00f2fe" font-family="monospace" font-size="12" letter-spacing="2">DEEP SPACE TELEMETRY</text>
+  <text x="95" y="195" fill="#ffffff" font-family="sans-serif" font-size="34" font-weight="bold">VOYAGE 09</text>
+  <text x="95" y="235" fill="#cbd5e1" font-family="sans-serif" font-size="14">Simulating gravity slingshots and orbital</text>
+  <text x="95" y="255" fill="#cbd5e1" font-family="sans-serif" font-size="14">paths via CSS Keyframes &amp; Transforms.</text>
+  
+  <!-- Specs Badges -->
+  <rect x="95" y="285" width="130" height="32" rx="6" fill="#241344" stroke="#b537f2" stroke-width="1" />
+  <text x="160" y="306" text-anchor="middle" fill="#b537f2" font-family="monospace" font-size="11">@keyframes orbit</text>
+
+  <rect x="235" y="285" width="130" height="32" rx="6" fill="#241344" stroke="#00f2fe" stroke-width="1" />
+  <text x="300" y="306" text-anchor="middle" fill="#00f2fe" font-family="monospace" font-size="11">transform: rotate</text>
+
+  <rect x="95" y="335" width="270" height="42" rx="6" fill="url(#violet-pink)" />
+  <text x="230" y="361" text-anchor="middle" fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold">INITIALIZE TRAJECTORY →</text>
+</svg>
